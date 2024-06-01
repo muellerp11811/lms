@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  lms:
+    build:
+      context: ./logitech-media-server
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    image: logitech-media-server:latest
+    #image: larsks/logitech-media-server
+    hostname: lms-server
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - squeezebox:/srv/squeezebox
+      - ${AUDIO_DIR}:/srv/music
+      - ${PLAY_DIR}:/srv/playlists
+    ports:
+    # uncomment the following line if you want to be able to
+    # access the web ui on port 80.
+    #     - "80:9000"
+      - "9000:9000"
+      - "9090:9090"
+      - "3483:3483"
+      - "3483:3483/udp"
+    restart: unless-stopped
+    init: true
+volumes:
+  squeezebox:
