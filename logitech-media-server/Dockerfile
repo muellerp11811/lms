@@ -7,7 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV SQUEEZE_VOL /srv/squeezebox
 ENV LANG C.UTF-8
 #ENV DEBIAN_FRONTEND noninteractive
-ENV PACKAGE_VERSION_URL=https://downloads.lms-community.org/LogitechMediaServer_v8.5.2/logitechmediaserver_8.5.2_amd64.deb
+ENV PACKAGE_VERSION_URL=https://downloads.lms-community.org/LyrionMusicServer_v9.0.1/lyrionmusicserver_9.0.1_amd64.deb
+# ENV PACKAGE_VERSION_URL=https://downloads.lms-community.org/LogitechMediaServer_v8.5.2/logitechmediaserver_8.5.2_amd64.deb
 # ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.4.0&revision=1&geturl=1&os=deb
 # ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.3.0&revision=1&geturl=1&os=deb
 # ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.1.0&revision=1&geturl=1&os=deb
